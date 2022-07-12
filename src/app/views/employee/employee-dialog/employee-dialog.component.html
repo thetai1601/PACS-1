@@ -1,7 +1,5 @@
-<div class="head">
-  <h3 class="title">Thêm mới nhân viên</h3>
-</div>
-<div class="main">
+<h1 mat-dialog-title>Chỉnh sửa thông tin</h1>
+<div mat-dialog-content>
   <form cForm class="row g-3">
     <c-col [xs]="12">
       <label cLabel for="inputEmail4">Họ và tên <small>(*)</small></label>
@@ -23,21 +21,21 @@
       <label cLabel for="inputState">Khoa phòng <small>(*)</small></label>
       <select cSelect id="inputState">
         <option>Chọn khoa phòng</option>
-        <option *ngFor="let item of department" value={{item.id}}>{{item.name}}</option>
+        <option>...</option>
       </select>
     </c-col>
     <c-col [md]="6">
       <label cLabel for="inputState">Vị trí <small>(*)</small></label>
       <select cSelect id="inputState">
         <option>Chọn vị trí</option>
-        <option *ngFor="let item of position" value={{item.id}}>{{item.name}}</option>
+        <option>...</option>
       </select>
     </c-col>
     <c-col [md]="6">
       <label cLabel for="inputState">Quyền <small>(*)</small></label>
-      <select cSelect id="inputState" >
+      <select cSelect id="inputState">
         <option>Chọn quyền</option>
-        <option *ngFor="let item of role" value={{item.id}}>{{item.name}}</option>
+        <option>...</option>
       </select>
     </c-col>
     <c-col [xs]="12" class="button">

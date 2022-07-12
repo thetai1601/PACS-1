@@ -1,0 +1,36 @@
+.title {
+  font-weight: 600
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #f33155;
+}
+
+@media(max-width: 800px) {
+  .responsive_table {
+      overflow-x: auto !important;
+  }
+
+  .mat-table {
+      min-width:800px;
+  }
+}
+
+::ng-deep .mat-sort-header-arrow {
+  color: #fff;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: #333 !important;
+}
+
+mat-form-field {
+  margin-right: 15px;
+}

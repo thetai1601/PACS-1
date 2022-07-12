@@ -10,7 +10,7 @@ import { RegisterComponent } from './views/pages/register/register.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'dashboard',
+    redirectTo: 'login',
     pathMatch: 'full',
   },
   {
@@ -88,6 +88,25 @@ const routes: Routes = [
             (m) => m.EmployeeModule
           ),
       },
+      {
+        path: 'inpatient-records',
+        loadChildren: () =>
+          import('./views/inpatient-records/inpatient-records.module').then(
+            (m) => m.InpatientRecordsModule
+          ),
+      },
+      {
+        path: 'outpatient-records',
+        loadChildren: () =>
+          import('./views/outpatient-records/outpatient-records.module').then(
+            (m) => m.OutpatientRecordsModule
+          ),
+      },
+      {
+        path: 'logbook',
+        loadChildren: () =>
+          import('./views/logbook/logbook.module').then((m) => m.LogbookModule),
+      },
     ],
   },
   {
@@ -119,7 +138,7 @@ const routes: Routes = [
     },
   },
 
-  { path: '**', redirectTo: 'dashboard' },
+  { path: '**', redirectTo: 'login' },
 ];
 
 @NgModule({

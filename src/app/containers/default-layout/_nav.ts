@@ -27,10 +27,6 @@ export const navItems: INavData[] = [
         name: 'Thêm mới nhân viên',
         url: '/employee/add'
       },
-      {
-        name: 'Cập nhật nhân viên',
-        url: '/employee/edit'
-      },
     ]
   },
   {
@@ -46,12 +42,63 @@ export const navItems: INavData[] = [
         name: 'Thêm mới khoa phòng',
         url: '/department/add'
       },
+    ]
+  },
+  {
+    name: 'Bệnh án nội trú',
+    url: '/inpatient-records',
+    iconComponent: { name: 'cilBookmark' },
+    children: [
+      {
+        name: 'Danh sách bệnh án',
+        url: '/inpatient-records/list',
+      },
+      {
+        name: 'Thêm mới bệnh án',
+        url: '/inpatient-records/add'
+      },
+    ]
+  },
+  {
+    name: 'Bệnh án ngoại trú',
+    url: '/outpatient-records',
+    iconComponent: { name: 'cilBookmark' },
+    children: [
+      {
+        name: 'Danh sách khoa phòng',
+        url: '/department/list',
+      },
+      {
+        name: 'Thêm mới khoa phòng',
+        url: '/department/add'
+      },
       {
         name: 'Cập nhật khoa phòng',
         url: '/department/edit'
       },
     ]
   },
+  {
+    name: 'Sổ theo dõi bệnh án',
+    url: '/logbook',
+    iconComponent: { name: 'cilBook' },
+    children: [
+      {
+        name: 'Danh sách khoa phòng',
+        url: '/department/list',
+      },
+      {
+        name: 'Thêm mới khoa phòng',
+        url: '/department/add'
+      },
+      {
+        name: 'Cập nhật khoa phòng',
+        url: '/department/edit'
+      },
+    ]
+  },
+
+  ///////////////////////*****************////////////////////////////
   // {
   //   name: 'Forms',
   //   url: '/forms',

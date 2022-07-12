@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Chỉnh sửa thông tin</h1>
+<div mat-dialog-content>
+  <form [formGroup]="departmentForm" cForm class="row g-3">
+    <c-col [xs]="12">
+      <label cLabel for="inputEmail4">Tên khoa phòng <small>(*)</small></label>
+      <input cFormControl id="inputEmail4" type="text" formControlName= "name"/>
+    </c-col>
+    <c-col [xs]="12" class="button">
+      <button cButton type="submit" (click)="onSubmit()">Chỉnh sửa</button>
+    </c-col>
+  </form>
+</div>

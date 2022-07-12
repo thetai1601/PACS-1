@@ -18,4 +18,8 @@ export class DefaultHeaderComponent extends HeaderComponent {
   constructor(private classToggler: ClassToggleService) {
     super();
   }
+
+  logout() {
+    window.sessionStorage.clear()
+  }
 }

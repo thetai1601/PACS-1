@@ -71,7 +71,7 @@ export class LoginComponent implements OnInit {
         this.tokenStorage.saveUserId(data.id);
         this.isLoginFailed = false;
         this.isLoggedIn = true;
-        this.route.navigate(['/#/dashboard'])
+        this.route.navigate(['/dashboard'])
       },
       error: (err) => {
         this.errorMessage = err.error.message;
